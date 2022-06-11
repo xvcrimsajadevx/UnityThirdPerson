@@ -69,7 +69,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.6083915, y: 1}
+    m_SensorSize: {x: 2.4731543, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -465,7 +465,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.6083915, y: 1}
+    m_SensorSize: {x: 2.4731543, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -754,7 +754,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.6083915, y: 1}
+    m_SensorSize: {x: 2.4731543, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -959,7 +959,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.6083915, y: 1}
+    m_SensorSize: {x: 2.4731543, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1035,7 +1035,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.6083915, y: 1}
+    m_SensorSize: {x: 2.4731543, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1210,16 +1210,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3883037724990816519, guid: 8a19e80309fb64045bea5f5f68262ffd, type: 3}
+      propertyPath: cineTargetGroup
+      value: 
+      objectReference: {fileID: 9212498252917398548}
     - target: {fileID: 4054368778396964475, guid: 8a19e80309fb64045bea5f5f68262ffd, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 9131730142812359916, guid: 8a19e80309fb64045bea5f5f68262ffd, type: 3}
-      propertyPath: <Targeter>k__BackingField
-      value: 
-      objectReference: {fileID: 1234979811742448410}
-    m_RemovedComponents:
-    - {fileID: 296611568287466292, guid: 8a19e80309fb64045bea5f5f68262ffd, type: 3}
+    m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a19e80309fb64045bea5f5f68262ffd, type: 3}
 --- !u!4 &729483906307706898 stripped
@@ -1227,17 +1226,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3679390596435889345, guid: 8a19e80309fb64045bea5f5f68262ffd, type: 3}
   m_PrefabInstance: {fileID: 4111918399618850003}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1234979811742448410 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2896923314075428809, guid: 8a19e80309fb64045bea5f5f68262ffd, type: 3}
-  m_PrefabInstance: {fileID: 4111918399618850003}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac4d78eb2ede44148beeeaa1181bd7ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &2156188706194322331 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 2665046637327904584, guid: 8a19e80309fb64045bea5f5f68262ffd, type: 3}
