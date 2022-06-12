@@ -1477,7 +1477,8 @@ MonoBehaviour:
   <Animator>k__BackingField: {fileID: 2665046637327904584}
   <Targeter>k__BackingField: {fileID: 2896923314075428809}
   <ForceReceiver>k__BackingField: {fileID: 4593874075468795716}
-  <FreeLookMovementSpeed>k__BackingField: 5
+  <FreeLookMovementSpeed>k__BackingField: 6
+  <TargetingMovementSpeed>k__BackingField: 5
   <RotationDamping>k__BackingField: 15
 --- !u!114 &3301667028828293397
 MonoBehaviour:
