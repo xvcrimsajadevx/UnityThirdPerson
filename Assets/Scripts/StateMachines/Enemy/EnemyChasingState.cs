@@ -23,27 +23,43 @@ public class EnemyChasingState : EnemyBaseState
         if (!IsInDetectRange())
         {
             stateMachine.SwitchState(new EnemyIdleState(stateMachine));
-
+            return;
+        } 
+        else if (IsInAttackRange())
+        {
+            stateMachine.SwitchState(new EnemyAttackingState(stateMachine));
             return;
         }
 
         MoveToPlayer(deltaTime);
+        FacePlayer();
 
         stateMachine.Animator.SetFloat(SpeedHash, 1f, AnimatorDampTime, deltaTime);
     }
 
     public override void Exit()
     {
-        stateMachine.Agent.ResetPath();
-        stateMachine.Agent.velocity = Vector3.zero;
+        if (stateMachine.Agent.isOnNavMesh)
+        {
+            stateMachine.Agent.ResetPath();
+            stateMachine.Agent.velocity = Vector3.zero;
+        }
     }
 
     private void MoveToPlayer(float deltaTime)
     {
-        stateMachine.Agent.destination = stateMachine.Player.transform.position;
-
-        Move(stateMachine.Agent.desiredVelocity.normalized * stateMachine.MovementSpeed, deltaTime);
-
+        if (stateMachine.Agent.isOnNavMesh)
+        {
+            stateMachine.Agent.destination = stateMachine.Player.transform.position;
+            Move(stateMachine.Agent.desiredVelocity.normalized * stateMachine.MovementSpeed, deltaTime);
+        }
+        
         stateMachine.Agent.velocity = stateMachine.Controller.velocity;
+    }
+
+    protected bool IsInAttackRange()
+    {
+        float playerDistanceSqr = (stateMachine.Player.transform.position - stateMachine.transform.position).sqrMagnitude;
+        return playerDistanceSqr <= stateMachine.AttackRange * stateMachine.AttackRange;
     }
 }
